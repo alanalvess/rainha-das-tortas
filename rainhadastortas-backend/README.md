@@ -66,25 +66,26 @@ Resposta (201 - Created)
 
 ## 🚀 Como Rodar o Projeto
 
-1. **Clone o repositório**
-    ```bash
-    git clone https://github.com/alanalvess/rainha-das-tortas.git
-    cd rainha-das-tortas/rainhadastortas-backend
-    ```
+### 1️⃣ Clone o repositório
+    
+```bash
+git clone https://github.com/alanalvess/rainha-das-tortas.git
+cd rainha-das-tortas/rainhadastortas-backend
+```
+
+### 2️⃣ Abra na sua IDE e execute o projeto.
+
+### 3️⃣ Verifique o perfil ativo do Spring Boot
+No arquivo `application.properties`, confirme que o perfil está configurado como **dev** para execução local:
+```properties
+spring.profiles.active=dev
+```
    
-2. **Abra na sua IDE** e execute o projeto.
+### 4️⃣ Importe o arquivo de testes** [`JSON`](rainha-das-tortas.postman_collection.json) no Postman ou Insomnia
 
-3. **Verifique o perfil ativo do Spring Boot**  
-   No arquivo `application.properties`, confirme que o perfil está configurado como **dev** para execução local:
-   ```properties
-   spring.profiles.active=dev
-   ```
-   
-4. **Importe o arquivo de testes** [`gamezone-testes.json`](./gamezone-testes.json) no Postman ou Insomnia
+### 5️⃣ Execute primeiro os testes POST para popular o banco.
 
-5. **Execute primeiro os testes POST** para popular o banco.
-
-6. **Depois, teste os demais endpoints.**
+### 6️⃣ Depois, teste os demais endpoints.
 > ⚠️ **Importante:** No ambiente de nuvem, configure o perfil como `prod`.
 
 ---
@@ -92,7 +93,7 @@ Resposta (201 - Created)
 ## 🖥 Frontend do Projeto
 Você pode testar direto no frontend usando o repositório:
 
-🔗 [GameZone Frontend](https://github.com/alanalvess/gamezone-frontend)
+🔗 [Frontend](https://github.com/alanalvess/rainha-das-tortas/tree/main/rainhadastortas-frontend)
 
 ![Tela inicial do sistema](../produtos.png)
 
@@ -103,9 +104,9 @@ Você pode testar direto no frontend usando o repositório:
 - 🍃 Spring Boot
 - 📦 Maven
 - 🗄 MySQL
-- 🧪 Postman
 
 ---
 
 ## 📄 Licença
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença **MIT**.  
+Consulte o arquivo [`LICENSE`](LICENSE) para mais detalhes.

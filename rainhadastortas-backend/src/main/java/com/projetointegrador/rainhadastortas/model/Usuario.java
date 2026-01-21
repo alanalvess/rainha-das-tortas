@@ -20,16 +20,16 @@ public class Usuario {
     @NotNull(message = "O Atributo Usuário é Obrigatório!")
     @Email(message = "O Atributo Usuário deve ser um email válido!")
     @Column(unique = true)
-    private String usuario;
+    private String email;
 
     @NotBlank(message = "O Atributo Senha é Obrigatório!")
     @Size(min = 8, message = "A Senha deve ter no mínimo 8 caracteres")
     private String senha;
 
-    public Usuario(Long id, String nome, String usuario, String senha) {
+    public Usuario(Long id, String nome, String email, String senha) {
         this.id = id;
         this.nome = nome;
-        this.usuario = usuario;
+        this.email = email;
         this.senha = senha;
     }
 
@@ -54,12 +54,12 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public String getUsuario() {
-        return this.usuario;
+    public String getEmail() {
+        return this.email;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getSenha() {
