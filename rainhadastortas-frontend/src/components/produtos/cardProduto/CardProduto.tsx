@@ -70,17 +70,22 @@ function CardProduto({ produto }: CardProdutoProps) {
 
   return (
     <>
-      <Card
-        className="max-w-xs xs:min-w-40"
-        imgAlt="Imagem do Produto"
-        imgSrc={produto.imagem}
-      >
+      <Card className="max-w-xs xs:min-w-40 overflow-hidden">
 
-        <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+        {/* IMAGEM */}
+        <div className="h-48 w-full overflow-hidden">
+          <img
+            src={produto.imagem}
+            alt="Imagem do Produto"
+            className="h-full w-full object-cover"
+          />
+        </div>
+
+        <h5 className="mt-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
           {produto.nome}
         </h5>
 
-        <div >
+        <div>
           <p className="text-sm font-bold text-gray-700 dark:text-gray-400">
             R$ {produto.valor.toFixed(2).replace('.', ',')}
           </p>
@@ -89,10 +94,12 @@ function CardProduto({ produto }: CardProdutoProps) {
           </p>
         </div>
 
-        <div className='flex gap-4 justify-between'>
+        <div className="flex gap-4 justify-between mt-2">
           {cardProdutoComponent}
         </div>
+
       </Card>
+
 
     </>
   )

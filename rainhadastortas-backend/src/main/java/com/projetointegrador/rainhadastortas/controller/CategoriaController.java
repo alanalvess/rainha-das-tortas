@@ -20,11 +20,6 @@ public class CategoriaController {
     @Autowired
     private CategoriaRepository categoriaRepository;
 
-    @GetMapping
-    public ResponseEntity<List<Categoria>> getAll() {
-        return ResponseEntity.ok(categoriaRepository.findAll());
-    }
-
     @GetMapping("/all")
     public ResponseEntity<List<Categoria>> getAllCategorias() {
         return ResponseEntity.ok(categoriaRepository.findAll());
@@ -50,10 +45,10 @@ public class CategoriaController {
                 .body(categoriaRepository.save(categoria));
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     public ResponseEntity<Categoria> put(@Valid @RequestBody Categoria categoria) {
         return categoriaRepository.findById(categoria.getId())
-                .map(resposta -> ResponseEntity.status(HttpStatus.CREATED)
+                .map(resposta -> ResponseEntity.status(HttpStatus.OK)
                         .body(categoriaRepository.save(categoria)))
                 .orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
     }

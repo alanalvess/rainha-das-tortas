@@ -10,7 +10,7 @@ const Carrinho = () => {
   let carrinhoComponent;
   let linkWhatsapp = '';
 
-  const CELULAR_EMPRESA = '5511982560389';
+  const CELULAR_EMPRESA = import.meta.env.VITE_CELULAR_EMPRESA;
 
   const { produtos, removerProduto } = useContext(AuthContext);
 

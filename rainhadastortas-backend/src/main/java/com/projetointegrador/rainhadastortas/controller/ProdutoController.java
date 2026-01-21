@@ -24,11 +24,6 @@ public class ProdutoController {
     @Autowired
     private CategoriaRepository categoriaRepository;
 
-    @GetMapping
-    public ResponseEntity<List<Produto>> getAll() {
-        return ResponseEntity.ok(produtoRepository.findAll());
-    }
-
     @GetMapping("/all")
     public ResponseEntity<List<Produto>> getAllProdutos() {
         return ResponseEntity.ok(produtoRepository.findAll());
