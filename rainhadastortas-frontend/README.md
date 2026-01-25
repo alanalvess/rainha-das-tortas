@@ -55,8 +55,7 @@ npm install
 
 ### 3️⃣ Configure as variáveis de ambiente
 
-Crie um arquivo `.env` na raiz do frontend:
-
+- Crie um arquivo `.env` na raiz do frontend:
 ```env
 VITE_API_URL=http://localhost:8080
 VITE_CELULAR_EMPRESA=5511900000000

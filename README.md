@@ -2,7 +2,7 @@
 
 Aplicação full stack para **catálogo e venda de tortas doces, tortas salgadas e bebidas**, com interface web moderna e API REST desenvolvida em Java.
 
-O projeto simula um pequeno negócio real, permitindo visualizar produtos, filtrar por categorias, adicionar itens ao carrinho e enviar pedidos diretamente via WhatsApp.
+O projeto simula um negócio real, permitindo visualizar produtos, filtrar por categorias, adicionar itens ao carrinho e enviar pedidos diretamente via WhatsApp.
 
 ---
 
